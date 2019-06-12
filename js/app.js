@@ -18,7 +18,7 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
     this.x = this.x + this.speed * dt;
-    if (this.x >= 505) {
+    if (this.x >= 480) {
         this.x = 0;
     }
     this.checkCollision();
@@ -47,7 +47,7 @@ var Player = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
-    this.sprite = 'images/char-boy.png';
+    this.sprite = 'images/char-pink-girl.png';
 };
 
 // Update method for Player
